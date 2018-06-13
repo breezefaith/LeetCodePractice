@@ -12,6 +12,14 @@ public class Solution {
         return addTwoNumbers1(l1,l2);
     }
 
+    /**
+     * 思路：
+     *      大数相加同样是用这样的思路来实现，把一个大数转化为数组或者链表，相加时要注意进位标志
+     * 时间复杂度：O(max(l1.length,l2.length))
+     * @param l1
+     * @param l2
+     * @return
+     */
     public ListNode addTwoNumbers1(ListNode l1, ListNode l2) {
         int flag=0;//进位标志
         ListNode p1=l1,p2=l2;
@@ -85,6 +93,6 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-
+        
     }
 }
